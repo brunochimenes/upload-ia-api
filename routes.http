@@ -23,3 +23,15 @@ Content-Type: application/json
 {
     "prompt": "explicação, vscode"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "43bc8622-b651-4abd-a6da-c2632cff8261",
+    "temperatura": 0.5,
+    "template": "Gere um resumo sucinto da transcrição do vídeo informado a seguir: '''{transcription}'''"
+}
